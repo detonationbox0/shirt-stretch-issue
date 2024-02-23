@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  padding: 0; margin: 0;
+  width:100vw;
+  height:100vh;
+}
+
+#resize {
+  width:100%;
+  height:100%;
+}
+
+#relative {
+  margin:auto;
+  position:relative;
+  width:fit-content;
+  max-height:100%;
+  object-fit:contain;
+}
+
+#canvas {
+  position:absolute;
+  background-color:white;
+  width:43%;
+  left:28%;
+  top:22%;
+}
+
+#relative > img {
+  display:block;
+  max-height:100vh;
+  height:auto;
+  max-width:100%;
+  width:auto;
+  background-color:red;
+}
+
+#controls {
+  position:absolute;
+  right: 0px;
+  top: 0px;
+  padding:20px;
+  background-color:rgba(240,240,240);
+  width: 253px;
+}
+
+input[type="number"] {
+    width:55px;
+}
+
+button, input[type="number"] {
+    margin-top:5px;
+    margin-bottom: 5px;
+}
+
+button, select {
+    width:100%;
+}
+
+#info {
+    position:absolute;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    bottom: 10px;
+    left: 10px;
+    padding: 4px;
+    background-color:rgba(0,0,0,.8);
+    color:White;
+}

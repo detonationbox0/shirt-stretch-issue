@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Konva Playground</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+
+
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <div id="resize">
+        <div id="relative">
+            <div id="info">Scale Y: 0, Scale X: 0</div>
+            <div id="canvas"></div>
+            <img id="productImage" src="">
+        </div>
+    </div>
+    <div id="controls">
+        <select id="pallets">
+            <option>Shirt</option>
+            <option>Hoodie</option>
+            <option>Hat</option>
+            <option>Beanie</option>
+        </select>
+        <br /><br />
+        <span>Canvas Width %:</span><input type="number" id="width" /><br />
+        <span>Canvas Left %:</span><input type="number" id="left" /><br />
+        <span>Canvas Top %:</span><input type="number" id="top" /><br /><br />
+        <span>Default Logo Width %:</span><input type="number" id="dwidth" /><br />
+        <span>Default Logo Height %:</span><input type="number" id="dheight" /><br />
+        <span>Default Logo Left %:</span><input type="number" id="dleft" /><br />
+        <span>Default Logo Top %:</span><input type="number" id="dtop" /><br />
+        <br />
+        <button id="add-default">Add Default Image</button><br />
+        <button id="add-image">Add Image</button><br />
+        <button id="download">Download</button>
+    </div>
+
+    <!--Konva-->
+    <script src="https://unpkg.com/konva@9/konva.min.js"></script>
+    <script type="module" src="konva.js"></script>
+    <script type="module" src="products.js"></script>
+    <script type="module" src="index.js"></script>
+</body>
+
+</html>
